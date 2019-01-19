@@ -27,7 +27,7 @@ class Node:
               self.board[0] == "O" and self.board[4] == "O" and self.board[8] == "O" or
               self.board[2] == "O" and self.board[4] == "O" and self.board[6] == "O"):
             self.weight = -1
-        elif self.board[0] == "" or self.board[1] == "" or self.board[2] == "" or self.board[3] == "" or self.board[4] == "" or self.board[5] == "" or self.board[6] == "" or self.board[7] == "" or self.board[8] == "":
+        elif self.board[0] != "" and self.board[1] != "" and self.board[2] != "" and self.board[3] != "" and self.board[4] != "" and self.board[5] != "" and self.board[6] != "" and self.board[7] != "" and self.board[8] == "":
             self.weight = 0
 
     def create_children(self):
