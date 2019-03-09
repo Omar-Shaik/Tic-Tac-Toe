@@ -22,8 +22,7 @@ class Board:
         self.b7 = tk.StringVar()
         self.b8 = tk.StringVar()
 
-        self.button0 = tk.Button(self.window, text="x", font='Times 20 bold', bg='black', fg='white', height=5, width=10, command=self.update_b0)
-        self.b0.set(self.mark)
+        self.button0 = tk.Button(self.window, font='Times 20 bold', bg='black', fg='white', height=5, width=10, command=self.update_b0)
         self.button1 = tk.Button(self.window, text='', font='Times 20 bold', bg='black', fg='white', height=5, width=10, command=self.update_b1)
         self.button2 = tk.Button(self.window, text='', font='Times 20 bold', bg='black', fg='white', height=5, width=10, command=self.update_b2)
         self.button3 = tk.Button(self.window, text='', font='Times 20 bold', bg='black', fg='white', height=5, width=10, command=self.update_b3)
@@ -32,6 +31,16 @@ class Board:
         self.button6 = tk.Button(self.window, text='', font='Times 20 bold', bg='black', fg='white', height=5, width=10, command=self.update_b6)
         self.button7 = tk.Button(self.window, text='', font='Times 20 bold', bg='black', fg='white', height=5, width=10, command=self.update_b7)
         self.button8 = tk.Button(self.window, text='', font='Times 20 bold', bg='black', fg='white', height=5, width=10, command=self.update_b8)
+
+        self.button0["text"] = "MOFO"
+        self.button1["text"] = "MOFO"
+        self.button2["text"] = "MOFO"
+        self.button3["text"] = "MOFO"
+        self.button4["text"] = "MOFO"
+        self.button5["text"] = "MOFO"
+        self.button6["text"] = "MOFO"
+        self.button7["text"] = "MOFO"
+        self.button8["text"] = "MOFO"
 
         self.button0.grid(row=1, column=0)
         self.button1.grid(row=1, column=1)
@@ -50,39 +59,39 @@ class Board:
             self.mark = "X"
 
     def update_b0(self):
-        self.b0.set(self.mark)
+        self.button0["text"] = self.mark
         self.switch_mark()
 
     def update_b1(self):
-        self.b1.set(self.mark)
+        self.button1["text"] = self.mark
         self.switch_mark()
 
     def update_b2(self):
-        self.b2.set(self.mark)
+        self.button2["text"] = self.mark
         self.switch_mark()
 
     def update_b3(self):
-        self.b3.set(self.mark)
+        self.button3["text"] = self.mark
         self.switch_mark()
 
     def update_b4(self):
-        self.b4.set(self.mark)
+        self.button4["text"] = self.mark
         self.switch_mark()
 
     def update_b5(self):
-        self.b5.set(self.mark)
+        self.button5["text"] = self.mark
         self.switch_mark()
 
     def update_b6(self):
-        self.b6.set(self.mark)
+        self.button6["text"] = self.mark
         self.switch_mark()
 
     def update_b7(self):
-        self.b7.set(self.mark)
+        self.button7["text"] = self.mark
         self.switch_mark()
 
     def update_b8(self):
-        self.b8.set(self.mark)
+        self.button8["text"] = self.mark
         self.switch_mark()
     
     def mainloop(self):
