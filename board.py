@@ -1,5 +1,5 @@
-import Tkinter as t
 import tree
+import Tkinter as t
 
 class Board:
     def __init__(self):
