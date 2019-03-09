@@ -1,4 +1,5 @@
 import Tkinter as t
+import tree
 
 
 class Board:
