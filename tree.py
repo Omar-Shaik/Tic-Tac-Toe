@@ -3,7 +3,7 @@ import node
 class Tree:
     def __init__(self):
         self.board = ["","","","","","","","",""]
-        self.root = Node(node.board,0)
+        self.root = Node(self.board,0)
 
 
     def set_score(node):
