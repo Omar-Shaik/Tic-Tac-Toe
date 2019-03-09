@@ -4,6 +4,7 @@ import tree
 class Board:
     def __init__(self):
         self.game_tree = Tree()
+        self.current_board = self.game_tree.root
         self.window = t.Tk()
         self.window.title("Tic Tac Toe")
         self.mark = "X"
