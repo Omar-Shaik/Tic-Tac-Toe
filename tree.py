@@ -1,4 +1,4 @@
-import Node
+import node
 
 class Tree:
     def __init__(self):
