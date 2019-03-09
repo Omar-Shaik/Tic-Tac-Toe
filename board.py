@@ -1,7 +1,6 @@
 import Tkinter as t
 import tree
 
-
 class Board:
     def __init__(self):
         self.game_tree = Tree()
