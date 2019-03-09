@@ -4,6 +4,7 @@ class Tree:
     def __init__(self):
         self.board = ["","","","","","","","",""]
         self.root = Node(self.board,0)
+        self.root.set_children()
         self.set_score(self.root)
 
 
