@@ -10,7 +10,7 @@ class Node:
     def set_mark(self):
         if self.height % 2 == 1:
             self.mark = "O"
-    
+
     def create_children(node):
         if node.height < 9:
             i = 0
