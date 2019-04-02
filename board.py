@@ -25,15 +25,15 @@ class Board:
         self.b7 = tk.StringVar()
         self.b8 = tk.StringVar()
 
-        self.button0 = tk.Button(self.window, text='', font='Arial 25 bold', bg='black', fg='white', height=5, width=10, command=self.update_b0)
-        self.button1 = tk.Button(self.window, text='', font='Arial 25 bold', bg='black', fg='white', height=5, width=10, command=self.update_b1)
-        self.button2 = tk.Button(self.window, text='', font='Arial 25 bold', bg='black', fg='white', height=5, width=10, command=self.update_b2)
-        self.button3 = tk.Button(self.window, text='', font='Arial 25 bold', bg='black', fg='white', height=5, width=10, command=self.update_b3)
-        self.button4 = tk.Button(self.window, text='', font='Arial 25 bold', bg='black', fg='white', height=5, width=10, command=self.update_b4)
-        self.button5 = tk.Button(self.window, text='', font='Arial 25 bold', bg='black', fg='white', height=5, width=10, command=self.update_b5)
-        self.button6 = tk.Button(self.window, text='', font='Arial 25 bold', bg='black', fg='white', height=5, width=10, command=self.update_b6)
-        self.button7 = tk.Button(self.window, text='', font='Arial 25 bold', bg='black', fg='white', height=5, width=10, command=self.update_b7)
-        self.button8 = tk.Button(self.window, text='', font='Arial 25 bold', bg='black', fg='white', height=5, width=10, command=self.update_b8)
+        self.button0 = tk.Button(self.window, text='', font='Arial 25 bold', bg='#cdc9c9', fg='black', height=3, width=5, command=self.update_b0)
+        self.button1 = tk.Button(self.window, text='', font='Arial 25 bold', bg='#cdc9c9', fg='black', height=3, width=5, command=self.update_b1)
+        self.button2 = tk.Button(self.window, text='', font='Arial 25 bold', bg='#cdc9c9', fg='black', height=3, width=5, command=self.update_b2)
+        self.button3 = tk.Button(self.window, text='', font='Arial 25 bold', bg='#cdc9c9', fg='black', height=3, width=5, command=self.update_b3)
+        self.button4 = tk.Button(self.window, text='', font='Arial 25 bold', bg='#cdc9c9', fg='black', height=3, width=5, command=self.update_b4)
+        self.button5 = tk.Button(self.window, text='', font='Arial 25 bold', bg='#cdc9c9', fg='black', height=3, width=5, command=self.update_b5)
+        self.button6 = tk.Button(self.window, text='', font='Arial 25 bold', bg='#cdc9c9', fg='black', height=3, width=5, command=self.update_b6)
+        self.button7 = tk.Button(self.window, text='', font='Arial 25 bold', bg='#cdc9c9', fg='black', height=3, width=5, command=self.update_b7)
+        self.button8 = tk.Button(self.window, text='', font='Arial 25 bold', bg='#cdc9c9', fg='black', height=3, width=5, command=self.update_b8)
 
         self.button0["text"] = ""
         self.button1["text"] = ""
@@ -91,7 +91,11 @@ class Board:
                 else:
                     sys.exit(0)
             elif winner == 0:
-                print("Draw")
+                ask = tk.messagebox.askretrycancel("Draw", "The Match was a DRAW!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
 
 
     def update_b1(self):
@@ -119,7 +123,11 @@ class Board:
                 else:
                     sys.exit(0)
             elif winner == 0:
-                print("Draw")
+                ask = tk.messagebox.askretrycancel("Draw", "The Match was a DRAW!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
 
     def update_b2(self):
         #self.button2["text"] = self.mark
@@ -147,7 +155,11 @@ class Board:
                 else:
                     sys.exit(0)
             elif winner == 0:
-                print("Draw")
+                ask = tk.messagebox.askretrycancel("Draw", "The Match was a DRAW!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
 
 
     def update_b3(self):
@@ -176,7 +188,11 @@ class Board:
                 else:
                     sys.exit(0)
             elif winner == 0:
-                print("Draw")
+                ask = tk.messagebox.askretrycancel("Draw", "The Match was a DRAW!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
 
     def update_b4(self):
         #self.button4["text"] = self.mark
@@ -204,7 +220,11 @@ class Board:
                 else:
                     sys.exit(0)
             elif winner == 0:
-                print("Draw")
+                ask = tk.messagebox.askretrycancel("Draw", "The Match was a DRAW!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
 
 
     def update_b5(self):
@@ -233,7 +253,11 @@ class Board:
                 else:
                     sys.exit(0)
             elif winner == 0:
-                print("Draw")
+                ask = tk.messagebox.askretrycancel("Draw", "The Match was a DRAW!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
 
 
     def update_b6(self):
@@ -262,7 +286,11 @@ class Board:
                 else:
                     sys.exit(0)
             elif winner == 0:
-                print("Draw")
+                ask = tk.messagebox.askretrycancel("Draw", "The Match was a DRAW!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
 
     def update_b7(self):
         #self.button7["text"] = self.mark
@@ -290,7 +318,11 @@ class Board:
                 else:
                     sys.exit(0)
             elif winner == 0:
-                print("Draw")
+                ask = tk.messagebox.askretrycancel("Draw", "The Match was a DRAW!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
 
 
     def update_b8(self):
@@ -319,7 +351,11 @@ class Board:
                 else:
                     sys.exit(0)
             elif winner == 0:
-                print("Draw")
+                ask = tk.messagebox.askretrycancel("Draw", "The Match was a DRAW!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
 
 
     def mainloop(self):
