@@ -1,3 +1,5 @@
+#import board as b
+
 #Function a boolean that's True if a game is finished.
 def finished(a):
     done = True
@@ -144,3 +146,4 @@ def start():
         print("Computer Wins")
     elif winner == 0:
         print("Draw")
+#start()
