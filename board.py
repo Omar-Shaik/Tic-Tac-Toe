@@ -1,3 +1,5 @@
+import os
+import sys
 from tkinter import Tk, Button, font, StringVar, messagebox
 import tkinter as tk
 from game import *
@@ -6,7 +8,6 @@ import game as g
 class Board:
     def __init__(self):
         self.index = None
-        
         self.window = Tk()
         self.window.resizable(width=False, height=False)
         self.window.title('Tic Tac Toe')
@@ -84,7 +85,11 @@ class Board:
                 tk.messagebox.askretrycancel("Player Wins", "The Winner is Player!" + "\n" + "Would you like to play again?")
             elif winner == -1:
                 #print("Computer Wins")
-                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                ask = tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
             elif winner == 0:
                 print("Draw")
 
@@ -108,7 +113,11 @@ class Board:
                 tk.messagebox.askretrycancel("Player Wins","The Winner is Player !!!")
             elif winner == -1:
                 #print("Computer Wins")
-                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                ask = tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
             elif winner == 0:
                 print("Draw")
 
@@ -132,7 +141,11 @@ class Board:
                 tk.messagebox.askretrycancel("Player Wins","The Winner is Player !!!")
             elif winner == -1:
                 #print("Computer Wins")
-                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                ask = tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
             elif winner == 0:
                 print("Draw")
 
@@ -157,7 +170,11 @@ class Board:
                 tk.messagebox.askretrycancel("Player Wins","The Winner is Player !!!")
             elif winner == -1:
                 #print("Computer Wins")
-                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                ask = tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
             elif winner == 0:
                 print("Draw")
 
@@ -181,7 +198,11 @@ class Board:
                 tk.messagebox.askretrycancel("Player Wins","The Winner is Player !!!")
             elif winner == -1:
                 #print("Computer Wins")
-                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                ask = tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
             elif winner == 0:
                 print("Draw")
 
@@ -206,7 +227,11 @@ class Board:
                 tk.messagebox.askretrycancel("Player Wins","The Winner is Player !!!")
             elif winner == -1:
                 #print("Computer Wins")
-                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                ask = tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
             elif winner == 0:
                 print("Draw")
 
@@ -231,7 +256,11 @@ class Board:
                 tk.messagebox.askretrycancel("Player Wins","The Winner is Player !!!")
             elif winner == -1:
                 #print("Computer Wins")
-                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                ask = tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
             elif winner == 0:
                 print("Draw")
 
@@ -255,7 +284,11 @@ class Board:
                 tk.messagebox.askretrycancel("Player Wins","The Winner is Player !!!")
             elif winner == -1:
                 #print("Computer Wins")
-                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                ask = tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
             elif winner == 0:
                 print("Draw")
 
@@ -280,7 +313,11 @@ class Board:
                 tk.messagebox.askretrycancel("Player Wins","The Winner is Player !!!")
             elif winner == -1:
                 #print("Computer Wins")
-                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                ask = tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
+                if ask == True:
+                    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+                else:
+                    sys.exit(0)
             elif winner == 0:
                 print("Draw")
 
