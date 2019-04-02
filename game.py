@@ -120,3 +120,27 @@ def get_next_move(a):
                 best_index = i
             i += 1
         return next_moves[best_index]
+ 
+#Function that starts a new game.
+def start():
+    board = [' ', ' ', ' ', ' ',' ', ' ', ' ', ' ', ' ']
+    complete = finished(board)
+    while not complete:
+        i = int(input())
+        if board[i] == ' ':
+            board[i] = 'X'
+            complete = finished(board)
+            if not complete:
+                board = get_next_move(board)
+                complete = finished(board)
+                print(board)
+        else:
+            print("You can't do that.")
+            print(board)
+    winner = win(board)
+    if winner == 1:
+        print("Player Wins")
+    elif winner == -1:
+        print("Computer Wins")
+    elif winner == 0:
+        print("Draw")
