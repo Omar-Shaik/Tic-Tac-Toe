@@ -1,4 +1,4 @@
-from tkinter import Tk, Button, font, StringVar
+from tkinter import Tk, Button, font, StringVar, messagebox
 import tkinter as tk
 from game import *
 import game as g
@@ -80,9 +80,11 @@ class Board:
         if complete:
             winner = g.win(self.board)
             if winner == 1:
-                print("Player Wins")
+                #print("Player Wins")
+                tk.messagebox.askretrycancel("Player Wins", "The Winner is Player!" + "\n" + "Would you like to play again?")
             elif winner == -1:
-                print("Computer Wins")
+                #print("Computer Wins")
+                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
             elif winner == 0:
                 print("Draw")
 
@@ -102,9 +104,11 @@ class Board:
         if complete:
             winner = g.win(self.board)
             if winner == 1:
-                print("Player Wins")
+                #print("Player Wins")
+                tk.messagebox.askretrycancel("Player Wins","The Winner is Player !!!")
             elif winner == -1:
-                print("Computer Wins")
+                #print("Computer Wins")
+                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
             elif winner == 0:
                 print("Draw")
 
@@ -124,9 +128,11 @@ class Board:
         if complete:
             winner = g.win(self.board)
             if winner == 1:
-                print("Player Wins")
+                #print("Player Wins")
+                tk.messagebox.askretrycancel("Player Wins","The Winner is Player !!!")
             elif winner == -1:
-                print("Computer Wins")
+                #print("Computer Wins")
+                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
             elif winner == 0:
                 print("Draw")
 
@@ -147,9 +153,11 @@ class Board:
         if complete:
             winner = g.win(self.board)
             if winner == 1:
-                print("Player Wins")
+                #print("Player Wins")
+                tk.messagebox.askretrycancel("Player Wins","The Winner is Player !!!")
             elif winner == -1:
-                print("Computer Wins")
+                #print("Computer Wins")
+                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
             elif winner == 0:
                 print("Draw")
 
@@ -169,9 +177,11 @@ class Board:
         if complete:
             winner = g.win(self.board)
             if winner == 1:
-                print("Player Wins")
+                #print("Player Wins")
+                tk.messagebox.askretrycancel("Player Wins","The Winner is Player !!!")
             elif winner == -1:
-                print("Computer Wins")
+                #print("Computer Wins")
+                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
             elif winner == 0:
                 print("Draw")
 
@@ -192,9 +202,11 @@ class Board:
         if complete:
             winner = g.win(self.board)
             if winner == 1:
-                print("Player Wins")
+                #print("Player Wins")
+                tk.messagebox.askretrycancel("Player Wins","The Winner is Player !!!")
             elif winner == -1:
-                print("Computer Wins")
+                #print("Computer Wins")
+                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
             elif winner == 0:
                 print("Draw")
 
@@ -215,9 +227,11 @@ class Board:
         if complete:
             winner = g.win(self.board)
             if winner == 1:
-                print("Player Wins")
+                #print("Player Wins")
+                tk.messagebox.askretrycancel("Player Wins","The Winner is Player !!!")
             elif winner == -1:
-                print("Computer Wins")
+                #print("Computer Wins")
+                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
             elif winner == 0:
                 print("Draw")
 
@@ -237,9 +251,11 @@ class Board:
         if complete:
             winner = g.win(self.board)
             if winner == 1:
-                print("Player Wins")
+                #print("Player Wins")
+                tk.messagebox.askretrycancel("Player Wins","The Winner is Player !!!")
             elif winner == -1:
-                print("Computer Wins")
+                #print("Computer Wins")
+                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
             elif winner == 0:
                 print("Draw")
 
@@ -260,9 +276,11 @@ class Board:
         if complete:
             winner = g.win(self.board)
             if winner == 1:
-                print("Player Wins")
+                #print("Player Wins")
+                tk.messagebox.askretrycancel("Player Wins","The Winner is Player !!!")
             elif winner == -1:
-                print("Computer Wins")
+                #print("Computer Wins")
+                tk.messagebox.askretrycancel("Computer Wins", "The Winner is Computer!" + "\n" + "Would you like to play again?")
             elif winner == 0:
                 print("Draw")
 
