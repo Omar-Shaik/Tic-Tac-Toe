@@ -54,3 +54,15 @@ def find_depth(a):
         if x != ' ':
             depth += 1
     return depth
+
+#Function that returns a list of next possible moves.
+def find_next_moves(a, mark):
+    moves = []
+    i = 0
+    while i < len(a):
+        if a[i] == ' ':
+            copy = [] + a
+            copy[i] = mark
+            moves.append(copy)
+        i += 1
+    return moves
