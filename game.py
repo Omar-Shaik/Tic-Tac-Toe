@@ -66,3 +66,57 @@ def find_next_moves(a, mark):
             moves.append(copy)
         i += 1
     return moves
+
+#Function that returns the best result for the player whose turn it is if they
+#make the move that results in array, a.
+def minimax(a):
+    #If game is finished, return winning state
+    if finished(a):
+        return win(a)
+    else:
+        #Get depth of game
+        depth = find_depth(a)
+        #Mark of current player
+        mark = None
+        #If it's X's turn
+        if depth%2 == 0:
+            mark = 'X'
+            next_moves = find_next_moves(a, mark)
+            next_values = list(map(minimax, next_moves))
+            return max(next_values)
+        #If it's O's turn
+        else:
+            mark = 'O'
+            next_moves = find_next_moves(a, mark)
+            next_values = list(map(minimax, next_moves))
+            return min(next_values)
+
+#Function that returns the next best move for player whose turn it is
+def get_next_move(a):
+    depth = find_depth(a)
+    if depth % 2 == 0:
+        mark = 'X'
+        next_moves = find_next_moves(a, mark)
+        next_move_values = list(map(minimax, next_moves))
+        best_index = 0
+        best_move_value = next_move_values[0]
+        i = 1
+        while i < len(next_move_values):
+            if next_move_values[i] > best_move_value:
+                best_move_value = next_move_values[i]
+                best_index = i
+            i += 1
+        return next_moves[best_index]
+    else:
+        mark = 'O'
+        next_moves = find_next_moves(a, mark)
+        next_move_values = list(map(minimax, next_moves))
+        best_index = 0
+        best_move_value = next_move_values[0]
+        i = 1
+        while i < len(next_move_values):
+            if next_move_values[i] < best_move_value:
+                best_move_value = next_move_values[i]
+                best_index = i
+            i += 1
+        return next_moves[best_index]
