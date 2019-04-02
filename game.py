@@ -1,4 +1,3 @@
-#This function works.
 #Function a boolean that's True if a game is finished.
 def finished(a):
     done = True
@@ -25,7 +24,6 @@ def finished(a):
         done = True
     return done
 
-#THis function works.
 #Function that returns the value of a finished game.
 def win(a):
     if ((a[0] == 'X' and a[1] == 'X' and a[2] =='X') or
@@ -49,7 +47,6 @@ def win(a):
     else:
         return 0
 
-#This function works.
 #Function that returns the depth of an array, a.
 def find_depth(a):
     depth = 0
