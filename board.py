@@ -11,8 +11,6 @@ class Board:
         self.window = Tk()
         self.window.resizable(width=False, height=False)
         self.window.title('Tic Tac Toe')
-        #self.current_board = self.game_tree.root
-        self.mark = "X"
         self.board = [' ',' ',' ',' ',' ',' ',' ',' ',' '] 
 
         self.b0 = tk.StringVar()
@@ -392,13 +390,6 @@ class Board:
 
     def mainloop(self):
         self.window.mainloop()
-
-    #THIS DOESNT SEEM TO BE DOING ANYTHING AS LONG AS THE BOARD IS NOT LINKED TO THE 
-    #ARRAY AT ALL. 
-    def winner(self):
-        if (Tree().set_score == True):
-            Tree().winx
-
 
 if __name__ == '__main__':
     Board().mainloop()

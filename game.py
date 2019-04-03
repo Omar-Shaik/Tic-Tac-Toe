@@ -146,4 +146,3 @@ def start():
         print("Computer Wins")
     elif winner == 0:
         print("Draw")
-#start()
