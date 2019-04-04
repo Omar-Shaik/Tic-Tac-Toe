@@ -1,5 +1,3 @@
-from tkinter import messagebox
-
 #Function a boolean that's True if a game is finished.
 def finished(a):
     done = True
